@@ -21,6 +21,48 @@ const routes = [
     name: "categories",
     meta: { layout: "main" },
     component: () => import("@/views/Categories.vue")
+  },
+  {
+    path: "/detail",
+    name: "detail",
+    meta: { layout: "main" },
+    component: () => import("@/views/DetailRecord.vue")
+  },
+  {
+    path: "/history",
+    name: "history",
+    meta: { layout: "main" },
+    component: () => import("@/views/History.vue")
+  },
+  {
+    path: "/history",
+    name: "history",
+    meta: { layout: "main" },
+    component: () => import("@/views/History.vue")
+  },
+  {
+    path: "/planning",
+    name: "planning",
+    meta: { layout: "main" },
+    component: () => import("@/views/Planning.vue")
+  },
+  {
+    path: "/profile",
+    name: "profile",
+    meta: { layout: "main" },
+    component: () => import("@/views/Profile.vue")
+  },
+  {
+    path: "/Record",
+    name: "record",
+    meta: { layout: "main" },
+    component: () => import("@/views/Record.vue")
+  },
+  {
+    path: "/Register",
+    name: "register",
+    meta: { layout: "main" },
+    component: () => import("@/views/Register.vue")
   }
 ];
 
