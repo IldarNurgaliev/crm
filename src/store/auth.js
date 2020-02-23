@@ -9,10 +9,11 @@ export default {
         await firebase.auth().signInWithEmailAndPassword(email, password);
         // eslint-disable-next-line no-empty
       } catch (e) {
+        commit("setError", e);
         throw e;
       }
     },
-    async register({ dispatch }, { email, password, name }) {
+    async register({ dispatch, commit }, { email, password, name }) {
       try {
         await firebase.auth().createUserWithEmailAndPassword(email, password);
         const uid = await dispatch("getUid");
@@ -25,6 +26,7 @@ export default {
           });
         // eslint-disable-next-line no-empty
       } catch (e) {
+        commit("setError", e);
         throw e;
       }
     },
