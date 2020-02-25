@@ -85,9 +85,6 @@ export default {
     },
     minValueField() {
       return this.$v.limit.$dirty && !this.$v.limit.minValue;
-    },
-    test() {
-      return console.log("delete");
     }
   }
 };
