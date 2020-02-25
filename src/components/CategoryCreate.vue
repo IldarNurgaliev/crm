@@ -11,12 +11,10 @@
             id="name"
             type="text"
             v-model="title"
-            :class="{ invalid: $v.title.$dirty && !$v.title.required }"
+            :class="{ invalid: requiredField }"
           />
           <label for="name">Название</label>
-          <span
-            v-if="$v.title.$dirty && !$v.title.required"
-            class="helper-text invalid"
+          <span v-if="requiredField" class="helper-text invalid"
             >Введите название</span
           >
         </div>
@@ -26,12 +24,10 @@
             id="limit"
             type="number"
             v-model.number="limit"
-            :class="{ invalid: $v.limit.$dirty && $v.limit.minValue }"
+            :class="{ invalid: minValueField }"
           />
           <label for="limit">Лимит</label>
-          <span
-            v-if="$v.limit.$dirty && !$v.limit.minValue"
-            class="helper-text invalid"
+          <span v-if="minValueField" class="helper-text invalid"
             >Минимальная величина {{ $v.limit.$params.minValue.min }}</span
           >
         </div>
@@ -81,6 +77,14 @@ export default {
         this.$emit("created", category);
         // eslint-disable-next-line no-empty
       } catch (error) {}
+    }
+  },
+  computed: {
+    requiredField() {
+      return this.$v.title.$dirty && !this.$v.title.required;
+    },
+    minValueField() {
+      return this.$v.limit.$dirty && !this.$v.limit.minValue;
     }
   }
 };
