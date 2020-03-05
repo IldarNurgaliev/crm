@@ -14,6 +14,33 @@ export default {
         throw error;
       }
     },
+    async fetchRecordById({ dispatch, commit }, id) {
+      try {
+        const uid = await dispatch("getUid");
+        const record =
+          (
+            await firebase
+              .database()
+              .ref(`users/${uid}/records`)
+              .child(id)
+              .once("value")
+          ).val() || {};
+        // const cats = [];
+        // Object.keys(categories).forEach(key => {
+        //   cats.push({
+        //     title: categories[key].title,
+        //     limit: categories[key].limit,
+        //     id: key
+        //   });
+        // });
+        // return cats;
+
+        return { ...record, id };
+      } catch (error) {
+        commit("setError", error);
+        throw error;
+      }
+    },
     async fetchRecords({ dispatch, commit }) {
       try {
         const uid = await dispatch("getUid");
