@@ -1,0 +1,26 @@
+{
+    "ProfileTitle": "Профиль",
+    "Name": "Имя",
+    "EnterName": "Введите имя",
+    "Update": "Обновить" ,
+    "Menu_History": "История",
+    "Menu_Bill": "Счет",
+    "Menu_Planning": "Планирование",
+    "Menu_NewRecord": "Новая запись",
+    "Menu_Category": "Категории",
+    "BillCurrency" : "Счёт в валюте" ,
+    "Exchrates" : "Курсы валют",
+    "Home_Currency": "Валюта",
+    "Home_Exchange" : "Курс" ,
+    "Home_Date" : "Дата",
+    "Home_Bill" : "Счёт",
+    "Category_Category": "Категории",
+    "Category_CategoriesIsNot" : "Категории пока нет ",
+    "Detail_History" : "История",
+    "Detail_Description" : "Описание",
+    "Detail_Amount": "Сумма",
+    "Detail_Category" : "Категория ",
+    "Detail_id_warning": "Запись с id",
+    "Detail_not_found" : "не найдена "
+
+}

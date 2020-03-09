@@ -4,7 +4,9 @@
     <div v-else-if="record">
       <div>
         <div class="breadcrumb-wrap">
-          <router-link to="/history" class="breadcrumb">История</router-link>
+          <router-link to="/history" class="breadcrumb">{{
+            "History" | localize
+          }}</router-link>
           <a @click.prevent class="breadcrumb">
             {{ record.type === "income" ? "Доход" : "Расход" }}
           </a>
@@ -13,9 +15,17 @@
           <div class="col s12 m6">
             <div class="card" :class="colorStyle">
               <div class="card-content white-text">
-                <p>Описание: {{ record.description }}</p>
-                <p>Сумма: {{ record.amount | currency }}</p>
-                <p>Категория: {{ record.categoryName }}</p>
+                <p>
+                  {{ "Detail_Description" | localize }}:
+                  {{ record.description }}
+                </p>
+                <p>
+                  {{ "Detail_Amount" | localize }}:
+                  {{ record.amount | currency }}
+                </p>
+                <p>
+                  {{ "Detail_Category" | localize }}: {{ record.categoryName }}
+                </p>
 
                 <small>{{ record.date | date("datetime") }}</small>
               </div>
@@ -25,7 +35,8 @@
       </div>
     </div>
     <p class="center" v-else>
-      Записи с id = ${{ $route.params.id }} не найдена
+      {{ "Detail_id_warning" | localize }} = ${{ $route.params.id }}
+      {{ "Detail_not_found" | localize }}
     </p>
   </div>
 </template>

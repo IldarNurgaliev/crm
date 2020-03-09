@@ -1,0 +1,27 @@
+{
+    "ProfileTitle": "Profile",
+    "Name": "Name" ,
+    "EnterName": "EnterName",
+    "Update": "Update" ,
+    "Menu_History": "History",
+    "Menu_Bill": "Bill",
+    "Menu_Planning": "Planning",
+    "Menu_NewRecord": "New record",
+    "Menu_Category": "Category",
+    "BillCurrency" : "Сurrency account" ,
+    "Exchrates" : "Exchange rates",
+    "Home_Currency": "Currency",
+    "Home_Exchange" : "Exchange" ,
+    "Home_Date" : "Date",
+    "Home_Bill" : "Bill",
+    "Category_Category": "Category",
+    "Category_CategoriesIsNot" : "No category yet ",
+    "Detail_History" : "History",
+    "Detail_Description" : "Description",
+    "Detail_Amount": "Amount",
+    "Detail_Category" : "Category",
+    "Detail_id_warning": "Record with id",
+    "Detail_not_found" : "not found "
+    
+
+}
