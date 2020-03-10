@@ -36,17 +36,18 @@
               ($v.password.$dirty && !$v.password.minLength)
           }"
         />
-        <label for="password">Пароль</label>
+        <label for="password">{{ "password" | localize }}</label>
         <small
           class="helper-text invalid"
           v-if="$v.password.$dirty && !$v.password.required"
-          >Введите пароль!</small
+          >{{ "pass_required" | localize }}</small
         >
         <small
           class="helper-text invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
-          >Пароль должен {{ $v.password.$params.minLength.min }} ти символов.
-          Сейчас он - {{ password.length }}</small
+          >{{ "pass_mustbe" | localize }}
+          {{ $v.password.$params.minLength.min }}
+          {{ "pass_mustbe_1" | localize }} - {{ password.length }}</small
         >
       </div>
       <div class="input-field">
@@ -56,31 +57,31 @@
           v-model.trim="name"
           :class="{ invalid: $v.name.$dirty && !$v.name.required }"
         />
-        <label for="name">Имя</label>
+        <label for="name">{{ "Name" | localize }}</label>
         <small
           class="helper-text invalid"
           v-if="$v.name.$dirty && !$v.name.required"
-          >Введите ваше имя</small
+          >{{ "EnterName" | localize }}</small
         >
       </div>
       <p>
         <label>
           <input type="checkbox" v-model="agree" />
-          <span>С правилами согласен</span>
+          <span>{{ "agreement" | localize }}</span>
         </label>
       </p>
     </div>
     <div class="card-action">
       <div>
         <button class="btn waves-effect waves-light auth-submit" type="submit">
-          Зарегистрироваться
+          {{ "sign_up" | localize }}
           <i class="material-icons right">send</i>
         </button>
       </div>
 
       <p class="center">
-        Уже есть аккаунт?
-        <router-link to="/login">Войти!</router-link>
+        {{ "is_account" | localize }}
+        <router-link to="/login"> {{ "login" | localize }}</router-link>
       </p>
     </div>
   </form>

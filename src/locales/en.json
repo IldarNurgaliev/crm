@@ -47,5 +47,13 @@
     "select_category": "Select category",
     "minValue": "minimum value",
     "enter_description": "Enter description",
-    "create": "Create"  
+    "create": "Create"  ,
+    "agreement": "Сompliance with the rules " ,
+    "is_acccount": "Already have an account?",
+    "label": "Label",
+    "enter_label": "Enter label",
+    "limit": "Limit"
+
+
+
 }

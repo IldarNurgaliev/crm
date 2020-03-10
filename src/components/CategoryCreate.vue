@@ -2,7 +2,7 @@
   <div class="col s12 m6">
     <div>
       <div class="page-subtitle">
-        <h4>Создать</h4>
+        <h4>{{ "create" | localize }}</h4>
       </div>
 
       <form @submit.prevent="submitHandler">
@@ -13,10 +13,10 @@
             v-model="title"
             :class="{ invalid: requiredField }"
           />
-          <label for="name">Название</label>
-          <span v-if="requiredField" class="helper-text invalid"
-            >Введите название</span
-          >
+          <label for="name">{{ "label" | localize }}</label>
+          <span v-if="requiredField" class="helper-text invalid">{{
+            "Enter_label" | localize
+          }}</span>
         </div>
 
         <div class="input-field">
@@ -26,14 +26,15 @@
             v-model.number="limit"
             :class="{ invalid: minValueField }"
           />
-          <label for="limit">Лимит</label>
+          <label for="limit">{{ "limit" | localize }}</label>
           <span v-if="minValueField" class="helper-text invalid"
-            >Минимальная величина {{ $v.limit.$params.minValue.min }}</span
+            >{{ "minValue" | localize }}
+            {{ $v.limit.$params.minValue.min }}</span
           >
         </div>
 
         <button class="btn waves-effect waves-light" type="submit">
-          Создать
+          {{ "create" | localize }}
           <i class="material-icons right">send</i>
         </button>
       </form>
