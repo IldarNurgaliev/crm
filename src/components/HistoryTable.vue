@@ -3,11 +3,11 @@
     <thead>
       <tr>
         <th>#</th>
-        <th>Сумма</th>
-        <th>Дата</th>
-        <th>Категория</th>
-        <th>Тип</th>
-        <th>Открыть</th>
+        <th>{{ "Detail_Amount" | localize }}</th>
+        <th>{{ "Home_Date" | localize }}</th>
+        <th>{{ "Detail_Category" | localize }}</th>
+        <th>{{ "type" | localize }}</th>
+        <th>{{ "open" | localize }}</th>
       </tr>
     </thead>
 
