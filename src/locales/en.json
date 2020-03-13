@@ -36,7 +36,7 @@
     "pass_required": "Enter a password!" ,
     "pass_mustbe": "Password must be is",
     "pass_mustbe_1": "characters. Now is" ,
-    "login": "login",
+    "login": "Login",
     "not_acccount": "No account?",
     "sign_up": "Sign_up",
     "type": "Type",
@@ -52,8 +52,9 @@
     "is_acccount": "Already have an account?",
     "label": "Label",
     "enter_label": "Enter label",
-    "limit": "Limit"
-
-
+    "limit": "Limit",
+    "home": "Home",
+    "signup_title": "Registration" ,
+    "record_title": "Records" 
 
 }
