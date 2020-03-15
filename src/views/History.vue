@@ -41,7 +41,7 @@ import { Pie } from "vue-chartjs";
 export default {
   metaInfo() {
     return {
-      title: this.$title("Menu_History")
+      title: this.$title("History_entities")
     };
   },
   name: "history",

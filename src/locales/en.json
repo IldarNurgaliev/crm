@@ -55,6 +55,12 @@
     "limit": "Limit",
     "home": "Home",
     "signup_title": "Registration" ,
-    "record_title": "Records" 
+    "not_account": "Not account?",
+    "NoUserWithEmail": "No user with this email",
+    "AuthWrongPassword": "Wrong password",
+    "EmailIsExist": "Email is exist"
+
+
+
 
 }

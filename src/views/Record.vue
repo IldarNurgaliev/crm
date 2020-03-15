@@ -90,7 +90,7 @@ import { mapGetters } from "vuex";
 export default {
   metaInfo() {
     return {
-      title: this.$title("record_title")
+      title: this.$title("Menu_NewRecord")
     };
   },
   name: "record",

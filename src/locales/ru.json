@@ -55,8 +55,10 @@
     "limit": "Лимит",
     "edit": "Редактировать" ,
     "home": "Дом",
-    "signup_title": "Регистрация" ,
-    "record_title": "Записи" 
-
+    "signup_title": "Регистрация"   ,
+    "not_account": "Нет аккаунта?",
+    "NoUserWithEmail": "Нет пользователя с таким email",
+    "AuthWrongPassword": "Неправильный пароль",
+    "EmailIsExist": "Email существует"
 
 }

@@ -22,7 +22,7 @@ import HomeCurrency from "@/components/HomeCurrency.vue";
 export default {
   metaInfo() {
     return {
-      title: this.$title("home")
+      title: this.$title("Home_Bill")
     };
   },
   name: "Home",
