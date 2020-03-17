@@ -38,7 +38,7 @@ export default {
         ).val();
         commit("setInfo", info);
       } catch (e) {
-        commit("setInfo", e);
+        commit("setError", e);
         throw e;
       }
     }

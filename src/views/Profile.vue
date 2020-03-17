@@ -81,6 +81,7 @@ export default {
         });
         // eslint-disable-next-line no-empty
       } catch (e) {}
+      localStorage.isRuLocale = this.isRuLocale ? "ru-RU" : "en-US";
     }
   }
 };

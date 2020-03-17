@@ -6,7 +6,9 @@ const locales = {
   "ru-RU": ru,
   "en-US": en
 };
+
 export default function localizeFilter(key) {
-  const locale = store.getters.info.locale || "ru-RU";
+  const locale =
+    store.getters.info.locale || localStorage.isRuLocale || "en-US";
   return locales[locale][key] || `[Localize error]: key ${key} not found`;
 }
