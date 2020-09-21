@@ -50,7 +50,7 @@ firebase.initializeApp({
 let app;
 firebase.auth().onAuthStateChanged(() => {
   if (!app) {
-    app = new Vue({
+    new Vue({
       router,
       store,
       render: h => h(App)

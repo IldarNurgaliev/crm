@@ -14,12 +14,8 @@
       </div>
     </div></div
 ></template>
-
 <script>
 export default {
-  data: function() {
-    return {};
-  },
   computed: {
     color() {
       const colors = [
